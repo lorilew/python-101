@@ -2,33 +2,33 @@
 
 This is a Python course for someone interested in becoming a professional programmer. It begins with thinking like a coder, progressing through the language of Python, to your first Pull Request. I hope you enjoy it! 
 
-### GRADES
+## Grades
 
 Grades are just sign posts to help you make your journey to becoming a developer. They will give you skills that you can use to demonstate your experience to other people. Feel free to start where ever you feel comfortable. I will try to add fun and interesting problems to solve in each level and if you are higher level, try solve them in different ways using TDD. 
 
-#### Grade 1
+### Grade 1
 * Think like a programmer
 * Pseudocode and simple logic diagrams
 * Boolean math
 
-#### Grade 2
+### Grade 2
 * Basic data types in Python
 * Data structures
 * Introduction to funcitons
 
-#### Grade 3
+### Grade 3
 * Pydocs
 * Jupyter Notebook
 * Classes in Python
 
-#### Grade 4
+### Grade 4
 * Input/output, using files
 * Python standard Library, PyPi and imports
 * Reading documentation
 * Python Modules
 * Pep8
 
-#### Grade 5
+### Grade 5
 * Virtual environments
 * Unit testing
 * Refactoring
@@ -36,20 +36,20 @@ Grades are just sign posts to help you make your journey to becoming a developer
 * Introduction to Flask
 * Using git as source control
 
-#### Grade 6
+### Grade 6
 * Using configuration
 * Interfaces
 * Connecting to databases
 * Data manipulation using Pandas
 * Logging
 
-#### Grade 7
+### Grade 7
 * Data visualisation
 * Functional tests
 * Advanced classes
 * Introduction to Django
 
-#### Grade 8
+### Grade 8
 * Parallelism in Python
 * Contribute to open-source project
 * Break down tasks into independent work items
