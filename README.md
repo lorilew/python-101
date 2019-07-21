@@ -12,7 +12,7 @@ Grades are just sign posts to help you make your journey to becoming a developer
 * Boolean math
 
 ### Grade 2
-* Basic data types in Python
+* [Basic data types in Python](basic-data-types.md)
 * Data structures
 * Introduction to funcitons
 
