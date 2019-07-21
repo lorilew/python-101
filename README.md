@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+## Welcome to Python 101
 
-You can use the [editor on GitHub](https://github.com/lorilew/python-101/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is a Python course for someone interested in becoming a professional programmer. It begins with thinking like a coder, progressing through the language of Python, to your first Pull Request. I hope you enjoy it! 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Grades
 
-### Markdown
+#### Grade 1
+* Think like a programmer
+* Pseudocode and simple logic diagrams
+* Boolean math
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### Grade 2
+* Basic data types in Python
+* Data structures
+* Introduction to funcitons
 
-```markdown
-Syntax highlighted code block
+#### Grade 3
+* Pydocs
+* Jupyter Notebook
+* Classes in Python
 
-# Header 1
-## Header 2
-### Header 3
+#### Grade 4
+* Input/output, using files
+* Python standard Library, PyPi and imports
+* Reading documentation
+* Python Modules
+* Pep8
 
-- Bulleted
-- List
+#### Grade 5
+* Virtual environments
+* Unit testing
+* Refactoring
+* TDD
+* Introduction to Flask
+* Using git as source control
 
-1. Numbered
-2. List
+#### Grade 6
+* Using configuration
+* Interfaces
+* Connecting to databases
+* Data manipulation using Pandas
+* Logging
 
-**Bold** and _Italic_ and `Code` text
+#### Grade 7
+* Data visualisation
+* Functional tests
+* Advanced classes
+* Introduction to Django
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lorilew/python-101/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#### Grade 8
+* Parallelism in Python
+* Contribute to open-source project
+* Break down tasks into independent work items
+* Don't re-invent the wheel
