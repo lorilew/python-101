@@ -25,7 +25,7 @@ Grades are just sign posts to help you make your journey to becoming a developer
 * Input/output, using files
 * Python standard Library, PyPi and imports
 * Reading documentation
-* Python Modules
+* [Imports and Modules](imports-and-modules.md)
 * Pep8
 
 ### Grade 5
