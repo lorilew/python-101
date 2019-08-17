@@ -13,6 +13,7 @@ Grades are just sign posts to help you make your journey to becoming a developer
 
 ### Grade 2
 * [Basic data types in Python](basic-data-types.md)
+* [Conditionals](conditionals.md)
 * Data structures
 * Introduction to functions
 
