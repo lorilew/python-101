@@ -3,7 +3,7 @@
 [Back](README.md)
 
 ## Github Commands
-[Cheat Sheet from Github](https://education.github.com/git-cheat-sheet-education.pdf)
+Have a look at this super helpful [Cheat Sheet from Github](https://education.github.com/git-cheat-sheet-education.pdf) to get you started.
 
 
 ## Git Branching Strategies
