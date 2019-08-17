@@ -14,7 +14,7 @@ Grades are just sign posts to help you make your journey to becoming a developer
 ### Grade 2
 * [Basic data types in Python](basic-data-types.md)
 * Data structures
-* Introduction to funcitons
+* Introduction to functions
 
 ### Grade 3
 * Pydocs
@@ -23,7 +23,8 @@ Grades are just sign posts to help you make your journey to becoming a developer
 
 ### Grade 4
 * Input/output, using files
-* Python standard Library, PyPi and imports
+* [Python standard Library](python-standard-library.md)
+* PyPi and imports
 * Reading documentation
 * [Imports and Modules](imports-and-modules.md)
 * Pep8
