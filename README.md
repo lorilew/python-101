@@ -34,7 +34,7 @@ Grades are just sign posts to help you make your journey to becoming a developer
 * Refactoring
 * TDD
 * Introduction to Flask
-* Using git as source control
+* [Using git as source control](using-git.md)
 
 ### Grade 6
 * Using configuration
