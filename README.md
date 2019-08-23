@@ -52,7 +52,7 @@ Grades are just sign posts to help you make your journey to becoming a developer
 * Introduction to Django
 
 ### Grade 8
-* Parallelism in Python
+* [Parallelism in Python](parallelism.md)
 * Contribute to open-source project
 * Break down tasks into independent work items
 * Don't re-invent the wheel
