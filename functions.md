@@ -55,4 +55,51 @@ only be inscope within the parent function and will not be able to be called fro
 ## Advanced Topics
 
 ### Decorators
+Decorators wrap a function, modifying it's behaviour.
 
+Example of using functions to wrap another function.
+```
+def go_on_rollacoaster():
+    return "wwhhhheeeeeeeee!"
+
+def check_height(fun_func):
+    def wrapper():
+        if height < 1.4:
+            return "Sorry, you are too short to ride"
+        else:
+            return fun_func()
+    return wrapper            
+
+go_on_rollacoaster = check_height(go_on_rollacoaster)
+```
+```
+>>> height = 1.2
+>>> go_on_rollacoaster()
+'Sorry, you are too short to ride'
+>>> height = 1.8
+>>> go_on_rollacoaster()
+'wwhhhheeeeeeeee!'
+```
+
+In Python you can use decorators in a simpler way by using the `@` symbol. In this 
+example you can see the decorator added to the `go_on_rollacoaster` function and there's no
+need for the extra line redefining the original function.
+```
+def check_height(fun_func):
+    def wrapper():
+        if height < 1.4:
+            return "Sorry, you are too short to ride"
+        else:
+            return fun_func()
+    return wrapper            
+
+@check_height
+def go_on_rollacoaster():
+    return "wwhhhheeeeeeeee!"
+```
+Decorators are useful for encapsulating repeated code that happens at the beginning or end of a
+function. They also allow us to spearate concerns and test the repeated code once in it's own
+function. A good example of this is checking that someone is authorised to use the function.
+
+### References
+https://realpython.com/primer-on-python-decorators/
