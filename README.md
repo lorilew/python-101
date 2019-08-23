@@ -15,7 +15,7 @@ Grades are just sign posts to help you make your journey to becoming a developer
 * [Basic data types in Python](basic-data-types.md)
 * [Conditionals](conditionals.md)
 * [Data structures](data_structures.md)
-* Introduction to functions
+* [Introduction to functions](functions.md)
 
 ### Grade 3
 * Pydocs
