@@ -66,6 +66,6 @@ Keep in mind when running tasks in a cooperative way, if a task takes a long tim
 to run because of a small bug, and there's no way to break the cycle it will starve
 the other tasks that need to run.
 
-
+## References
 These are condensed notes from Real Python. More information and example can 
 be found (here)[https://realpython.com/python-concurrency/].
