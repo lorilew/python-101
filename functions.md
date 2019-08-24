@@ -2,7 +2,8 @@
 [Back](README.md)
 
 In Python, functions are first-class objects. This means that you can treat a function like any 
-other object and pass it around or use it as an arguament in another function.
+other object and pass it around or use it as an argument in another function.
+
 ```
 >>> def add_one(number):
 ...    return number + 1
@@ -13,13 +14,15 @@ other object and pass it around or use it as an arguament in another function.
 
 And a common mistake when starting out is forgetting the parenthesis. If you do not call the method
 it won't do anything. In this example the print method is printing the object `add_one` that is of
-type fuction.
+type function.
+
 ```
 >>> print(add_one)
 <function add_one at 0x7f144112bbf8>
 ```
 
-Here's an example of a function being passed as an arguement.
+Here's an example of a function being passed as an argument.
+
 ```
 def good_feedback(name):
     return f"Hi {name}, you're doing a great job!"
@@ -30,12 +33,14 @@ def best_feedback(name):
 def give_feedback_bob(feedback_func):
     return feedback_func("Bob")
 ```
+
 ```
 >>> give_bob_feedback(best_feedback)
 "Hey Bob, this is awesome!"
 ```
 
 Here's an example of a function being returned from another function
+
 ```
 def present():
    return f"Wow, it's a Puppy"
@@ -43,6 +48,7 @@ def present():
 def gift_present():
     return present
 ```
+
 ```
 >>> new_present = gift_present()
 >>> new_present()
@@ -50,7 +56,7 @@ def gift_present():
 ```
 
 You can also define functions inside other functions. If you do this the inner functions will
-only be inscope within the parent function and will not be able to be called from outside.
+only be in scope within the parent function and will not be able to be called from outside.
 
 ## Advanced Topics
 
@@ -58,6 +64,7 @@ only be inscope within the parent function and will not be able to be called fro
 Decorators wrap a function, modifying it's behaviour.
 
 Example of using functions to wrap another function.
+
 ```
 def go_on_rollacoaster():
     return "wwhhhheeeeeeeee!"
@@ -72,6 +79,7 @@ def check_height(fun_func):
 
 go_on_rollacoaster = check_height(go_on_rollacoaster)
 ```
+
 ```
 >>> height = 1.2
 >>> go_on_rollacoaster()
@@ -84,6 +92,7 @@ go_on_rollacoaster = check_height(go_on_rollacoaster)
 In Python you can use decorators in a simpler way by using the `@` symbol. In this 
 example you can see the decorator added to the `go_on_rollacoaster` function and there's no
 need for the extra line redefining the original function.
+
 ```
 def check_height(fun_func):
     def wrapper():
@@ -97,14 +106,16 @@ def check_height(fun_func):
 def go_on_rollacoaster():
     return "wwhhhheeeeeeeee!"
 ```
+
 Decorators are useful for encapsulating repeated code that happens at the beginning or end of a
-function. They also allow us to spearate concerns and test the repeated code once in it's own
+function. They also allow us to separate concerns and test the repeated code once in it's own
 function. A good example of this is checking that someone is authorised to use the function.
 
 ### Simple Decorator Template
 * Allow the wrapped function to have arguments
 * Return the wrapped function return values
 * Use the `@functools.wraps` decorator, this will preserve the orignal function information.
+
 ```
 import functools
 import functools
@@ -128,6 +139,7 @@ Decorators are executed in the order they are listed. The first wraps the next a
 
 However, if arguments are passed in, you need to think of it as the opposite. The last args passed
 in are for the first decorator, this is better shown with the example below:
+
 ```
 @decorator_1
 @decorator_2
@@ -160,6 +172,7 @@ class CountCalls:
 def say_whee():
     print("Wheeee!")
 ```
+
 ```
 >>> say_whee()
 Wheeee!
@@ -167,7 +180,6 @@ Wheeee!
 >>> say_whee.count
 1
 ```
-
 
 
 ### References
