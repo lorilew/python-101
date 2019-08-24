@@ -101,5 +101,74 @@ Decorators are useful for encapsulating repeated code that happens at the beginn
 function. They also allow us to spearate concerns and test the repeated code once in it's own
 function. A good example of this is checking that someone is authorised to use the function.
 
+### Simple Decorator Template
+* Allow the wrapped function to have arguments
+* Return the wrapped function return values
+* Use the `@functools.wraps` decorator, this will preserve the orignal function information.
+```
+import functools
+import functools
+
+def decorator(func):
+    @functools.wraps(func)
+    def wrapper_decorator(*args, **kwargs):
+        # Do something before
+        value = func(*args, **kwargs)
+        # Do something after
+        return value
+    return wrapper_decorator
+```
+
+### Examples Of Class Decorators
+* @singleton Ensures that there is only one instance of a class
+* @dataclass Comes with basic functionality already implemented such as print, compare, rank, ...
+
+### Nesting Decorators
+Decorators are executed in the order they are listed. The first wraps the next and so on.
+
+However, if arguments are passed in, you need to think of it as the opposite. The last args passed
+in are for the first decorator, this is better shown with the example below:
+```
+@decorator_1
+@decorator_2
+def some_func(some_func_arg, decorator_2_arg, decorator_3_arg):
+    pass
+```    
+
+### Stateful Decorators
+These decorators can keep track of state. The typical way to maintain state is by using classes.
+
+Remember `@my_decorator` is an easier way of saying `func = my_decorator(func)`; therefore, if `my_decorator` is a class, it needs to take func as an argument in its `.__init__()` method.
+
+Furthermore, the class needs to be callable so that it can stand in for the decorated function. For
+a class to be callable, you implement the special `.__call__()` method.
+
+The `__init__()` method must include `functools.update_wrapper` similarly to `@functools.wraps` 
+seen in the decorator template above.
+
+```
+class CountCalls:
+    def __init__(self, func):
+        functools.update_wrapper(self, func)
+        self.count = 0
+        self.func = func
+    def __call__(self, *args, **kwargs):
+        self.count += 1
+        return self.func(*args, **kwargs)
+ 
+@CountCalls
+def say_whee():
+    print("Wheeee!")
+```
+```
+>>> say_whee()
+Wheeee!
+
+>>> say_whee.count
+1
+```
+
+
+
 ### References
 https://realpython.com/primer-on-python-decorators/
