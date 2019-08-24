@@ -116,6 +116,7 @@ function. A good example of this is checking that someone is authorised to use t
 * Return the wrapped function return values
 * Use the `@functools.wraps` decorator, this will preserve the orignal function information.
 
+
 ```
 import functools
 import functools
