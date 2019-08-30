@@ -54,6 +54,9 @@ This sentence has 5 s's in it.
 ## Booleans
 Objects of the Boolean type may have one of two values, `True` or `False`. In Python expressions that evaluate to `True` Boolean are described as _truthy_ and `False` as _falsy_.
 
+## Built-In Functions
+There are lots of built in functions to help you use these data types. See the link in _References_ below.
+
 ## Challenges
 1. [Numbers](https://www.codewars.com/kata/century-from-year/train/python)
 2. [Numbers](https://www.codewars.com/kata/volume-of-a-cuboid/train/python)
