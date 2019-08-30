@@ -81,7 +81,39 @@ Accessing elements and slicing is done in the same way as lists. But remember tu
 
 ## Dictionaries
 
+Dictionaries are mutable and dynamic. Dictionary elements are accessed by a key. Dictionary keys and values can be of any type. Keys must be unique.
+
+```
+>>> d = {"name": "Bob", "age": 52}
+>>> type(d)
+<type 'dict'>
+
+>>> print(d["name"])
+Bob
+
+>>> d["fave_icecream"] = "mint"
+>>> print(d)
+{'age': 52, 'name': 'Bob', 'fave_icecream': 'mint'}
+
+>>> "address" in d
+False
+
+>>> len(d)
+3
+
+>>> name = d.pop("name")
+'Bob'
+>>> d
+{'age': 52, 'fave_icecream': 'mint'}
+>>> name
+'Bob'
+
+```
+
+Dictionaries are a super usefule tool to have in Python. Refer to the link in _References_ below and try out some challenges. 
+
 ## Sets
+// todo
 
 ## Challenges
 1. [Removing elements](https://www.codewars.com/kata/removing-elements/python)
