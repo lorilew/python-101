@@ -1,6 +1,8 @@
 # Grade 2 
 
-Please submit a pull request for a python script that demonstrates your use of grade 2 material in this folder.
+Create a python script with functions that demostrate your grade 2 skills.
+
+Please clone this repository, add your python script to the folder `python-101/homework/grade2` and create a PR.
 
 The file name should be called something like `lauren-grade-2.py`
 
