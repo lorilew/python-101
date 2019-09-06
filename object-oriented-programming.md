@@ -13,11 +13,7 @@ Python does not enforce you use OOP.
 Classes are used to describe user-defined data structures. For example an _Book()_ class may have the attributes 
 _title_, _price_ and methods _set_price()_.  
 
-When you create and use a object this is called an _instance_ of the class. An object of a class is a copy of a class
-with concrete values. An object can be used to store data and can be passed between functions. You can create 
-multiple instances of a class and they will be independent from each other. 
-
-Primitive data structures such as numbers, strings and lists are objects too.
+When you create and use a object this is called an _instance_ of the class. Primitive data structures such as numbers, strings and lists are objects too.
 
 Example
 
@@ -31,11 +27,19 @@ class Book:
 ``` 
 
 ```
-the_tiny_unicorn = Book(title="The Tiny Unicorn", price=7.00)
-the_pigmy_alpaca = Book(title="The Pigmy Alpaca's Adventures On The Moon", price=50.00)
+>>> the_tiny_unicorn = Book(title="The Tiny Unicorn", price=7.00)
+>>> the_pigmy_alpaca = Book(title="The Pigmy Alpaca's Adventures On The Moon", price=50.00)
 
-my_books = [the_tiny_unicorn, the_pigme_alpaca]
+>>> print(the_tiny_unicorn.title)
+The Tiny Unicorn
 
 ```
 
+The *_init__()* method is called automatically when you create a new _Book_ instance.
 
+You can then access the object attributes using the `.` dot-notation.
+
+An object of a class is a copy of a class with concrete values. An object can be used to store data and can be passed between functions. You can create multiple instances of a class and they will be independent from each other. 
+
+## References
+[RealPython Object Oriented Programming](https://realpython.com/python3-object-oriented-programming/)
