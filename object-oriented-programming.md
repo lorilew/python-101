@@ -32,7 +32,9 @@ class Book:
 
 ```
 the_tiny_unicorn = Book(title="The Tiny Unicorn", price=7.00)
-the_pigme_alpaca = Book(title="The Pigme Alpaca's Adventures On The Moon", price=50.00)
+the_pigmy_alpaca = Book(
+            title="The Pigmy Alpaca's Adventures On The Moon", price=50.00
+        )
 
 my_books = [the_tiny_unicorn, the_pigme_alpaca]
 
