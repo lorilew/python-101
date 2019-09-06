@@ -20,7 +20,7 @@ Grades are just sign posts to help you make your journey to becoming a developer
 ### Grade 3
 * Pydocs
 * Jupyter Notebook
-* Classes in Python
+* [Object Oriented Programming](object-oriented-programming.md)
 
 ### Grade 4
 * Input/output, using files
